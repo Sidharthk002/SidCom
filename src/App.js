@@ -10,6 +10,7 @@ import Newsletter from "./components/Footer/Newsletter/Newsletter";
 import AppContext from "./utils/context";
 import Checkout from "./components/CheckoutPage/Checkout";
 import SignUp from "./components/Account/SignUp";
+import SignIn from "./components/Account/SignIn";
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
                     <Route path="/category/:id" element={<Category />} />
                     <Route path="/product/:id" element={<SingleProduct />} />
                     <Route path="/checkout" element={<Checkout/>}/>
+                    <Route path="/signup" element={<SignUp/>}/>
+                    <Route path="/signin" element={<SignIn/>}/>
                 </Routes>
                 <Newsletter />
                 <Footer />
